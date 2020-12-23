@@ -31,20 +31,6 @@ const authRegister = asyncErrorWrapper(async (req, res, next) => {
 
   sendJwtToClient(user, res);
 
-  // try {
-  //   const user = await User.create({
-  //     firstName,
-  //     lastName,
-  //     email,
-  //     password,
-  //   });
-  //   res.status(200).json({
-  //     success: true,
-  //     data: user,
-  //   });
-  // } catch (error) {
-  //   next(error);
-  // }
 });
 
 const authLogin = asyncErrorWrapper(async (req, res, next) => {

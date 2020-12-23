@@ -45,7 +45,7 @@ const LoginModal = () => {
       localStorage.setItem("auth-token", loginRes.data.access_token);
     } catch (err) {
       err.response.data.message && setMsg(err.response.data.message);
-      console.log(err.response);
+      //console.log(err.response);
     }
   };
 
